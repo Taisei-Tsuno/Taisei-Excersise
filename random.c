@@ -1,12 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include <unistd.h>
 int main()
 {
+  char name[100];
   srand((unsigned int)time(NULL));
   int a[3],i;
   int flag=0;
+  printf("Who are you?\n >");
+  scanf("%s",name);
+  printf("Hello,%s!\n",name);
   printf("Tossing a coin...\n");
 for(i=0;i<3;i++)
 {

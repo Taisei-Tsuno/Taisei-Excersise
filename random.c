@@ -21,5 +21,9 @@ for(i=0;i<3;i++)
    }
 }
 printf("Heads: %d, Tails: %d\n",flag,3-flag);
+
+if(flag>1)printf("You won!\n");
+else printf("You lost!\n");
+
 return 0;
 }
